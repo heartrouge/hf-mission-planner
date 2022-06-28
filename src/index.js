@@ -448,7 +448,7 @@ function burnsTurnsHazardsSegments(u, v) {
   const burns = burnWeight(u, v)
   const turns = turnWeight(u, v) // Assuming infinite thrust and no waiting...
   const hazards = hazardWeight(u, v)
-  return [turns, burns, hazards, 1]
+  return [hazards, turns, burns, 1]
 }
 
 function pathId(p) {
